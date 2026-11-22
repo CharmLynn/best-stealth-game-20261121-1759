@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #0b0e16;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#game {
+  display: block;
+  max-width: min(100vw, 110vh);
+  max-height: calc(100vh - 48px);
+  width: auto;
+  height: auto;
+  aspect-ratio: 960 / 686;
+  touch-action: none;
+  background: #10141f;
+  border: 1px solid #2a2f3f;
+  border-radius: 6px;
+}
+
+/* Read aloud, never shown: the status line screen readers announce. */
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+#help {
+  margin: 0;
+  color: #9aa5bd;
+  font-size: 13px;
+  text-align: center;
+}
